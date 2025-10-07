@@ -4,9 +4,7 @@ Face recognition technology has become deeply embedded in modern life — from A
 
 In this project, I used a pretrained ResNet-50 model to classify gender from facial images. The image samples were taken from the [FairFace dataset on Kaggle](https://www.kaggle.com/datasets/abdulwasay551/fairface-race), which includes diverse faces across race, age, and gender.
 
-To interpret the model’s inner workings, I applied Grad-CAM and two of its enhanced variants, Grad-CAM++ and XGrad-CAM, to visualize the class-discriminative regions within each image. These techniques highlight which parts of a face contribute most to the model’s final classification decision. 
-
-By comparing the attention heatmaps across eight representative images, I aimed to visualize the regions the model relies on when predicting gender, to analyze whether those focus patterns are logically meaningful and how trustworthy the predictions are. 
+To interpret the model’s inner workings, I applied Grad-CAM and two of its enhanced variants, Grad-CAM++ and XGrad-CAM, to visualize the class-discriminative regions within each image. These techniques highlight which parts of a face contribute most to the model’s final classification decision, helping analyze how trustworthy the predictions are. 
 
 ## 📚 Methods
 
@@ -18,7 +16,7 @@ By comparing the attention heatmaps across eight representative images, I aimed 
   * XGrad-CAM
 * **Framework:** PyTorch with `torchvision` and `pytorch-grad-cam`
 
-## ⚙️ Implementation
+## ⚙️ Key Implementations
 
 1. Model Setup
 2. Image Preprocessing
